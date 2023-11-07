@@ -1,0 +1,48 @@
+clear
+clc
+
+% Define and set the value of an ‘Age’ variable that stores your age
+Age = input("Enter your age: ");
+
+% Define and set the value of a ‘Distance’ variable that stores the distance to the destination, in miles
+Distance = input("Enter the distance: ");
+
+% Calculate the cost of the trip as per the pricing structure above
+if Distance <= 1
+    cost = 1 + Distance*10 * 0.22
+   22;
+else
+    cost = 1 + 2.2 +(Distance-1)*10 * 0.18;
+end
+
+
+% Apply the 10% discount for people 21 years old and younger
+if Age <= 21
+    cost = cost * 0.9;
+end
+
+
+% Output a statement using ‘disp’ that tells you the total cost of your trip
+disp("The total cost of your trip is: $");
+disp(cost);
+
+
+% Calculate the cost of your friend's trip
+Distance2 = input("Enter the distance of your friends trip: ");
+Age2 = input("Enter the age of your friend: ");
+
+
+if Distance2 <= 1
+    cost2 = 1 + Distance2*10 * 0.22;
+else
+    cost2 = 1 + 2.2 + (Distance2-1)*10 * 0.18;
+end
+
+% Output a statement using ‘disp’ that tells you the total cost of your friend's trip
+disp('The total cost of your friend''s trip is: $');
+disp(cost2);
+
+
+
+
+

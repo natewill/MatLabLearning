@@ -1,0 +1,10 @@
+half_life_in_min = input("Enter the half life of your substance in minutes");
+initial_amount_1 = input("Enter the initial amount adminstered in the first molecule");
+initial_amount_2 = input("Enter the initial amount adminstered in the second molecule");
+time_values = 1 : 50;
+leftover1 = initial_amount_1 * (0.5^(time_values/half_life_in_min));
+leftover2 = 
+
+
+
+
